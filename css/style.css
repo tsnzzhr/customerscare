@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+:root{
+    --birutua : #8E9FB9;
+    --birumuda  : #AABBD4;
+    --putihabu : #EEF1F6;
+
+}
+
+body{
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif !important;
+}
+a{
+    text-decoration: none !important;
+    color:  var(--putihabu) !important;
+}
+span{
+    color: white;
+}
+
+.right, .left{
+    display:inline;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float:left;
+}
+
+nav{
+    color: var(--putihabu) !important;
+    background-color:  var(--birutua);
+    height: 80px;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    z-index:2;
+}
+.nav{
+    padding: 20px !important;
+}
+
+.nav-item{
+    display:inline !important;
+    margin: 15px;
+}
+
+.container{
+    margin: 10%;
+}
+
+
+.option{
+    background-color: var(--birutua);
+    height: 50px;
+    width: 150px;
+    border-radius: 20px 20px 0  0;
+    color: white;
+    display:inline-block;
+}
+
+.combo-box{
+    height: 200px;
+    width:1100px;
+    background-color: var(--birumuda);
+    border-radius: 0 10px 10px 10px; 
+    padding:20px;
+}
+
+.form-select{
+    width: 240px !important;
+    height: 60px !important;
+    margin: 20px 15px  !important;
+    border-radius: 10px !important;
+}
+
+.cari{
+    width: 180px !important;
+    height: 60px !important;
+    margin: 20px 15px  !important;
+    border-radius: 10px !important;
+}
+.promosi{
+    margin: 20px !important;
+    text-align: center !important;
+}
+.card{
+    display: inline-block !important;
+    margin:  70px 50px !important;
+}
+
+.card img{
+    margin: 20px 10px !important;
+}
+
+.pesan{
+    margin: auto  10%;
+    text-align: center;
+}
+
+.pesan-box{
+    background-color: var(--birutua);
+    color:white;
+    height:  150px;
+    width:  900px;
+    border-radius: 20px;
+    padding:  30px;
+}
+
+.btn-pesan{
+    color: var(--birutua);
+    height: 50px;
+}
+
+hr {
+	width: 250px;
+	border-top-left-radius: 3px solid rgb(0, 0, 0);
+}
+
+.tabel-servis th{
+    width:  200px;
+    padding: 10px;
+    background-color: var(--birutua);
+
+    color: white;
+}
+
+.tabel-servis tr{
+    background-color: var(--birumuda);
+    color:black;
+}
+
+.tabel-servis  td{
+    text-align: center;
+}
+
+.judul{
+    color:var(--birutua);
+    text-align: center;
+}
+
+.btn-service{
+    width: 120px;
+    height: 40px;
+    background-color: var(--birutua);
+    color:white;
+}
+
+
+.subleft1{
+    display: inline;
+}
