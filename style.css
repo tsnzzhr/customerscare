@@ -1,0 +1,117 @@
+/* Button used to open the chat form - fixed at the bottom of the page */
+:root{
+  --birutua : #8E9FB9;
+  --birumuda  : #AABBD4;
+  --putihabu : #EEF1F6;
+
+}
+
+body{
+  width: auto;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.chat-button{
+    width:70px;
+    height: 70px;
+    background-color: var(--birutua);;
+    color: white;
+    border-radius: 100%;
+    padding:5px;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-button i{
+    font-size:  35px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+.message-list{
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.chat{
+  color :white !important;
+  background-color: var(--birutua) !important;
+  width: inherit;
+  margin: 2px !important;
+  border-radius: 8px;
+  height: fit-content;
+  max-width: 350px;
+  padding: 10px;
+}
+
+.card-body p{
+  margin: .05px;
+}
+
+.form-container {
+  min-width: 400px;
+  padding: 20px;
+  background-color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 95px;
+  border: solid 2px var(--birutua);;
+  border-radius: 30px;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 70px;
+  border-radius: 10px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: var(--birutua);
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 1;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
+}
