@@ -124,7 +124,62 @@
         </div>
     </div>
     </div>
+<script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "inline-block";
+      }
 
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+
+      function reaction() {
+        if (document.getElementById("myForm").style.display == "none") {
+          openForm();
+        } else {
+          closeForm();
+        }
+      }
+    </script>
+    <div class="container m-3">
+      <div class="main-content d-inline">
+        <img
+          src="
+          chat.png"
+          alt="helpdesk-center"
+          width="700rem"
+          height="600rem"
+        />
+      </div>
+      <div class="chat-box d-inline">
+        <div class="chat-popup" id="myForm">
+          <form class="form-container">
+            <h1>Chatbox</h1>
+
+            <label for="msg"><b>Halo, Customer!</b></label>
+            <div class="message-list">
+              <div class="card-body chat">
+                <p>Hi!</p>
+              </div>
+              <div class="card-body chat">
+                <p>Hello</p>
+              </div>
+            </div>
+            <textarea
+              placeholder="ketik untuk memulai chat dengan admin.."
+              name="msg"
+              id="msg"
+              required
+            ></textarea>
+
+            <button type="submit" id="sendMessage" class="btn">Kirim</button>
+          </form>
+        </div>
+        <div onclick="reaction()" class="btn chat-button">
+          <i class="bi-chat-dots"></i>
+        </div>
+      </div>
+    </div>
     <!-- footer -->
     <footer>
       <div class="conteiner text-center" style="background-color: #8E9FB9; height: 70px;">
